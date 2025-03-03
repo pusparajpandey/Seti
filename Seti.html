@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SETI KARNALI TRADERS</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #004aad;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        header h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header p {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+        header img {
+            max-width: 200px;
+            margin-top: 20px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            60% { transform: translateY(-10px); }
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #0077cc;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 30px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #005bb5;
+            color: #fff;
+        }
+
+        /* Main Section */
+        main {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        main h2 {
+            font-size: 2.8em;
+            color: #004aad;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        main p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 20px auto;
+            color: #555;
+        }
+        .cta-button {
+            margin-top: 20px;
+            display: inline-block;
+            background-color: #004aad;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #00337d;
+            transform: scale(1.05);
+        }
+
+        /* Services Section */
+        section {
+            padding: 80px 20px;
+            background-color: #f4f7fc;
+        }
+        section h2 {
+            font-size: 2.8em;
+            color: #004aad;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .services-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        .services-grid div {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .services-grid div:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .services-grid div h3 {
+            font-size: 1.6em;
+            color: #004aad;
+            margin-bottom: 15px;
+        }
+        .services-grid div p {
+            font-size: 1.1em;
+            color: #555;
+        }
+        .services-grid div img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            background-color: #e3f2fd;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .contact-info h3 {
+            font-size: 2.8em;
+            color: #004aad;
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .contact-info a {
+            color: #004aad;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-info a:hover {
+            color: #ffcc00;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            font-size: 1.2em;
+            color: #004aad;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #ffcc00;
+        }
+        .map {
+            margin-top: 30px;
+        }
+        .map iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #004aad;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to SETI KARNALI TRADERS</h1>
+        <p>Your one-stop shop for clothing, accessories, and more!</p>
+        <img src="images/logo.jpg" alt="SETI KARNALI TRADERS Logo">
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Section -->
+    <main id="about">
+        <h2>About SETI KARNALI TRADERS</h2>
+        <p>At SETI KARNALI TRADERS, we bring you the best in stylish clothing, school essentials, and high-quality accessories. Our commitment is to deliver top-notch products that enhance your lifestyle.</p>
+        <img src="images/banner.jpg" alt="Banner Image" style="max-width: 100%; height: auto; border-radius: 10px; margin-top: 20px;">
+        <a href="#contact" class="cta-button">Get in Touch</a>
+    </main>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div>
+                <img src="images/clothes.jpg" alt="Clothing">
+                <h3>Clothing</h3>
+                <p>Fashionable outfits for men, women, and children.</p>
+                <a href="clothing.html" class="cta-button">More option</a>
+            </div>
+            <div>
+                <img src="images/ladies-jacket.jpg" alt="Ladies Jackets">
+                <h3>Ladies Jackets</h3>
+                <p>Stylish and warm jackets for ladies.</p>
+                <a href="ladies-jacket.html" class="cta-button">More option</a>
+            </div>
+            <div>
+                <img src="images/boy-jacket.jpg" alt="Boy Jackets">
+                <h3>Boy Jackets</h3>
+                <p>Trendy jackets for boys.</p>
+                <a href="boy-jacket.html" class="cta-button">More option</a>
+            </div>
+            <div>
+                <img src="images/shoes.jpg" alt="School Shoes">
+                <h3>School Shoes</h3>
+                <p>Durable and comfortable footwear for students.</p>
+                <a href="school-shoes.html" class="cta-button">More option</a>
+            </div>
+            <div>
+                <img src="images/bag.jpg" alt="Bags & Handbags">
+                <h3>Bags & Handbags</h3>
+                <p>Stylish and spacious bags for all your needs.</p>
+                <a href="bags.html" class="cta-button">More option</a>
+            </div>
+            <div>
+                <img src="images/tshirt.jpg" alt="T-Shirts">
+                <h3>T-Shirts</h3>
+                <p>Trendy and comfortable casual wear.</p>
+                <a href="tshirts.html" class="cta-button">More option</a>
+            </div>
+            <div>
+                <img src="images/shirt.jpg" alt="Shirts">
+                <h3>Shirts</h3>
+                <p>Classy and formal shirts for men.</p>
+                <a href="shirts.html" class="cta-button">More option</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-info">
+        <h3>Contact Us</h3>
+        <p>We'd love to hear from you!</p>
+        <p>Phone: <strong>9848410353</strong></p>
+        <p>Email: <a href="mailto:puspapandey56@gmail.com">puspapandey56@gmail.com</a></p>
+        <p>Location: Lamki Chuha, Lamki Kailai</p>
+        <div class="social-links">
+            <a href="https://wa.me/9848410353">WhatsApp</a>
+            <a href="https://www.facebook.com/shyampandey76">Facebook</a>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.1744170323797!2d81.14700651100259!3d28.628881804846804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a213993b3854f9%3A0x2a8778c1f130fbdb!2sSeti%20Karnali%20traders!5e0!3m2!1sen!2snp!4v1691597469054!5m2!1sen!2snp" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 SETI KARNALI TRADERS. All Rights Reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
